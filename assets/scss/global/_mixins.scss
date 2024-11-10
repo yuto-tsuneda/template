@@ -1,0 +1,25 @@
+@use "valiables" as val;
+
+@mixin xs{
+  @media(max-width:val.$xs){
+    @content;
+  }
+}
+
+@mixin sp{
+  @media(max-width:val.$sp){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media(max-width:val.$tablet){
+    @content;
+  }
+}
+
+@mixin pc{
+  @media(min-width:val.$pc){
+    @content;
+  }
+}
